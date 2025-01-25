@@ -1,0 +1,116 @@
+
+/* VARIABLES */
+:root {
+  --primary-color:orange;
+  --secondary-color:blue;
+  --text-color:purple;
+  --bg-color:white;
+  --font-family: 'Times New Roman', sans-serif;
+}
+
+/* Base */
+body {
+  font-family: var(--font-family);
+  color: var(--text-color);
+  backround: var(--bg-color);
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+section { 
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 20px;
+)
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  background: url('profile-bg.jpg') no-repeat center/cover;
+  color: orange;
+  position: relative;
+  text-align: center;
+}
+  header ::before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background:blue (0,0,0,0.5);
+  }
+  header .content: {
+    position: relative;
+    z-index: 1;
+  }
+header h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+  animation: fadeInDown 1s forwards;
+}
+header p{
+  font-size: 1.5em;
+  animation: fadeInUp 1s forwards;
+}
+.down-arrow {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2em;
+  color: #fff;
+  cursor: pointer;
+  animation: bounce 2s infinite;
+  z-index: 1;
+}
+
+/* Text */
+ section h2{
+   font-size: 2.5em;
+   margin-bottom: 0.5em;
+   color: var(--primary-colorprimary);
+   position: relative;
+}
+ section h2: :after {
+  content: '';                      
+  width: 50px;
+  height: 4px;
+  background: var(--primary-color);
+  display: block;
+  margin: 0.5em auto 0;
+ }
+
+/* ABOUT */
+#about {
+ display: flex;
+ flex-wrap: wrap;
+ align-items: center;
+ justify-content: center;
+}
+ #about img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0,0,0.1);
+}
+.about-context
+  max width: 600px;
+  margin: 20px;
+}
+.about-context p {
+  font-size: 1.2em;                  
+  margin-bottom: 1.5em;
+  line-height: 1.5;
+}
+
+
+/* EDUCATION */
+.education-container {       
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} 
